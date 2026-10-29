@@ -12,6 +12,7 @@ dev
 * Fix `pystemd.futures` ignoring `User=` on systemd >= 255
 * Fix `pystemd.futures.TransientUnitPoolExecutor` leaking its unit when the parent process is killed
 * Add `PrivatePIDs`, `ProtectHostnameEx` and `SystemCallErrorNumber` to systemd1 KNOWN_UNIT_SIGNATURES
+* Fix `pystemd.run(wait_for_activation=True)` hanging forever when the unit fails to start
 
 0.15.3
 =====
