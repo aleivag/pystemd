@@ -14,6 +14,7 @@ dev
 * Add `PrivatePIDs`, `ProtectHostnameEx` and `SystemCallErrorNumber` to systemd1 KNOWN_UNIT_SIGNATURES
 * Fix `pystemd.run(wait_for_activation=True)` hanging forever when the unit fails to start
 * Add `FileDescriptorStoreMax` and `FileDescriptorStorePreserve` to systemd1 KNOWN_UNIT_SIGNATURES
+* Add `fds=` to `pystemd.daemon.notify` (sd_pid_notify_with_fds) and add `pystemd.daemon.listen_fds_with_names` (file descriptor store / named socket activation)
 
 0.15.3
 =====
