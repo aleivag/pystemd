@@ -19,6 +19,7 @@ dev
 * Split `pystemd.utils` into a package (`pystemd.utils.{x2,unit,typing}`); existing imports keep working
 * Add `pystemd.utils.ns.join_namespaces` (atomic pidfd `setns`, with a per-namespace fallback); `pystemd.futures` uses it, which also fixes leaking one fd per namespace in every worker
 * Add `delegate=` to `pystemd.run`, a shortcut for `extra={"Delegate": ...}`
+* Add `OOMPolicy`, `OOMScoreAdjust` and the `ManagedOOM*` properties to systemd1 KNOWN_UNIT_SIGNATURES
 
 0.15.3
 =====
